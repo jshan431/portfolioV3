@@ -5,7 +5,13 @@ import Header from './Header'
 
 import styles from '../styles/components/Layout.module.scss'
 
-export default function Layout({title, keywords, description, children}) {
+export default function Layout({title, keywords, description, children, router}) {
+
+  const variants = {
+    hidden: { opacity: 0, x: -200, y: 0 },
+    enter: { opacity: 1, x: 0, y: 0 },
+    exit: { opacity: 0, x: 0, y: -100 },
+  }
 
   return (
     <div className={styles.contents + " overflow-hidden"}>
@@ -15,7 +21,16 @@ export default function Layout({title, keywords, description, children}) {
         <meta name='keywords' content={keywords} />
       </Head>
       <Header />
+      <motion.main
+        initial="hidden"
+        animate="enter"
+        exit="exit"
+        variants={variants}
+        transition={{ type: 'linear' }}
+        className={styles.container}
+      >
         {children}
+      </motion.main>
     </div>
   )
 }
