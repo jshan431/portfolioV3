@@ -1,15 +1,38 @@
-import { AnimatePresence } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
+
+import Layout from '../components/Layout'
+
 import '../styles/globals.scss'
 
 function MyApp({ Component, pageProps, router }) {
+
+  const variants = {
+    hidden: { opacity: 0, x: -200, y: 0 },
+    enter: { opacity: 1, x: 0, y: 0 },
+    exit: { opacity: 0, x: 0, y: -100 },
+  }
+
   return (
-    <AnimatePresence
-      exitBeforeEnter
-      initial={false}
-      onExitComplete={() => window.scrollTo(0, 0)}
-    >
-      <Component {...pageProps}/>
-    </AnimatePresence>
+    <Layout router={router}>
+      <AnimatePresence
+        exitBeforeEnter
+        initial={false}
+        onExitComplete={() => window.scrollTo(0, 0)}
+      >
+      <motion.main
+        key={router.route}
+        initial="hidden"
+        animate="enter"
+        exit="exit"
+        variants={variants}
+        transition={{ type: 'linear' }}
+        // className={styles.container}
+      >
+        <Component {...pageProps}/>
+      </motion.main>
+      </AnimatePresence>
+    </Layout>
+
   )
 }
 

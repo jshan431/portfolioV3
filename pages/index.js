@@ -5,10 +5,10 @@ import styles from '../styles/Home.module.scss'
 
 export default function Home() {
   return (
-    <Layout title='Jack Shan'>
 
-      <h1 style={{marginTop: '500px'}}>Home</h1>
 
-    </Layout>
+      <h1 style={{marginTop: '200px'}}>Home</h1>
+
+
   )
 }
