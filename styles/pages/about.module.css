@@ -1,0 +1,9 @@
+.aboutPageContainer {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  margin-top: 25%;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  transition: all .3s ease-in-out;
+}

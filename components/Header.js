@@ -1,8 +1,9 @@
 import { useEffect, useState, useRef } from "react"
 import { motion } from "framer-motion"
 import Link from 'next/link'
-import styles from '../styles/components/Header.module.scss'
-import { useAppContext } from "../AppContext";
+import styles from '../styles/components/Header.module.css'
+
+import DarkModeSwitch from "../elements/DarkModeSwitch";
 
 export default function Header() {
 
@@ -10,7 +11,7 @@ export default function Header() {
 
   const [scrollPass, setScrollPass] = useState(false);
 
-  const { state, dispatch } = useAppContext()
+
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -19,16 +20,6 @@ export default function Header() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
-  const toggleDarkMode = () => {
-
-    dispatch({type: 'toggle_darkMode'})
-
-  }
-
-  if (state.darkMode){
-    console.log("Yes in dark mode")
-  }
 
   const handleScroll = () => {
     const scrollPassPoint = 150
@@ -45,7 +36,7 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <nav className={`${styles.nav} ${scrollPass ? styles.active : ''} ${state.darkMode ? styles.dark : ''}`} ref={myRef}>
+      <nav className={`${styles.nav} ${scrollPass ? styles.active : ''}`} ref={myRef}>
         <div className={styles.container}>
           <h1 className="logo"><a href="/index.html">My Website</a></h1>
           <ul>
@@ -62,7 +53,7 @@ export default function Header() {
               </Link>
             </li>
             <li><a href="#">Services</a></li>
-            <li onClick={toggleDarkMode}>Dark Mode</li>
+            <li><DarkModeSwitch /></li>
           </ul>
         </div>
       </nav>

@@ -1,0 +1,13 @@
+.contents {
+
+  --primary-color: yellow;
+  --secondary-color: purple;
+
+}
+
+.contents.contentDark {
+
+  --primary-color: blue;
+  --secondary-color: red;
+
+}
