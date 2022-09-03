@@ -11,6 +11,10 @@
   transition: all 0.3s ease-in-out;
 }
 
+.nav.dark {
+  background-color: blue;
+}
+
 .nav .container {
   display: flex;
   justify-content: space-between;

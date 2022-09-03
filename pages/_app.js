@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion'
-
+import {AppWrapper} from "../AppContext";
 import Layout from '../components/Layout'
 
 import '../styles/globals.scss'
@@ -13,25 +13,27 @@ function MyApp({ Component, pageProps, router }) {
   }
 
   return (
-    <Layout router={router}>
-      <AnimatePresence
-        exitBeforeEnter
-        initial={false}
-        onExitComplete={() => window.scrollTo(0, 0)}
-      >
-      <motion.main
-        key={router.route}
-        initial="hidden"
-        animate="enter"
-        exit="exit"
-        variants={variants}
-        transition={{ type: 'linear' }}
-        // className={styles.container}
-      >
-        <Component {...pageProps}/>
-      </motion.main>
-      </AnimatePresence>
-    </Layout>
+    <AppWrapper>
+      <Layout router={router}>
+        <AnimatePresence
+          exitBeforeEnter
+          initial={false}
+          onExitComplete={() => window.scrollTo(0, 0)}
+        >
+        <motion.main
+          key={router.route}
+          initial="hidden"
+          animate="enter"
+          exit="exit"
+          variants={variants}
+          transition={{ type: 'linear' }}
+          // className={styles.container}
+        >
+          <Component {...pageProps}/>
+        </motion.main>
+        </AnimatePresence>
+      </Layout>
+    </AppWrapper>
 
   )
 }

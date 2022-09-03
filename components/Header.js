@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from "react"
 import { motion } from "framer-motion"
 import Link from 'next/link'
 import styles from '../styles/components/Header.module.scss'
+import { useAppContext } from "../AppContext";
 
 export default function Header() {
 
@@ -9,19 +10,7 @@ export default function Header() {
 
   const [scrollPass, setScrollPass] = useState(false);
 
-  // useEffect(() => {
-  //   window.addEventListener("scroll", () => {
-  //     setScroll(window.scrollY > 50);
-  //     console.log(window.scrollY)
-  //   });
-
-  //   return () => {
-  //     window.removeEventListener('scroll', () => {
-  //       setScroll(window.scrollY > 50);
-  //       console.log(window.scrollY)
-  //     });
-  //   };
-  // }, []);
+  const { state, dispatch } = useAppContext()
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -30,6 +19,16 @@ export default function Header() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const toggleDarkMode = () => {
+
+    dispatch({type: 'toggle_darkMode'})
+
+  }
+
+  if (state.darkMode){
+    console.log("Yes in dark mode")
+  }
 
   const handleScroll = () => {
     const scrollPassPoint = 150
@@ -46,7 +45,7 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <nav className={`${styles.nav} ${scrollPass ? styles.active : ''}`} ref={myRef}>
+      <nav className={`${styles.nav} ${scrollPass ? styles.active : ''} ${state.darkMode ? styles.dark : ''}`} ref={myRef}>
         <div className={styles.container}>
           <h1 className="logo"><a href="/index.html">My Website</a></h1>
           <ul>
@@ -63,7 +62,7 @@ export default function Header() {
               </Link>
             </li>
             <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li onClick={toggleDarkMode}>Dark Mode</li>
           </ul>
         </div>
       </nav>
