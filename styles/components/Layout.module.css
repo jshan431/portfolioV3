@@ -1,13 +1,23 @@
 .contents {
 
-  --primary-color: yellow;
-  --secondary-color: purple;
+  --primary-color: #6E85B7;
+  --secondary-color: #C1DEAE;
+  --secondary-color-transparent: rgba(193, 222, 174, .7);
+  --tertiary-color: #B088F9;
+  --tertiary-color-transparent: rgba(176,136,249, .7);
+  --quaternary-color: #FF4646;
 
+  --primary-text-color: #222;
 }
 
 .contents.contentDark {
 
-  --primary-color: blue;
-  --secondary-color: red;
+  --primary-color: #16213E;
+  --secondary-color: #0F3460;
+  --secondary-color-transparent: rgba(15,52,96, .7);
+  --tertiary-color: #533483;
+  --tertiary-color-transparent: rgba(83,52,131, .7);
+  --quaternary-color: #E94560;
 
+  --primary-text-color: #fff;
 }

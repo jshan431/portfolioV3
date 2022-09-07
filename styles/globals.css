@@ -1,0 +1,26 @@
+
+/* Basic Reset using universal selector */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* declare root font size for rem */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  /* background-color: red; */
+
+  --primary-animation-transition: all 0.3s ease-in-out;
+  --hover-width: 75%;
+  --other-width: 25%;
+
+  background-color: black;
+}

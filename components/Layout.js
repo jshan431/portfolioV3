@@ -6,7 +6,7 @@ import { useAppContext } from "../AppContext";
 
 import styles from '../styles/components/Layout.module.css'
 
-export default function Layout({title, keywords, description, children, router}) {
+export default function Layout({title, keywords, description, children}) {
 
   const { state, dispatch } = useAppContext()
 

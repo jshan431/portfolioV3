@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import {AppWrapper} from "../AppContext";
 import Layout from '../components/Layout'
 
-import '../styles/globals.scss'
+import '../styles/globals.css'
 
 function MyApp({ Component, pageProps, router }) {
 

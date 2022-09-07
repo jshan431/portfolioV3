@@ -1,13 +1,14 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Layout from '../components/Layout'
-import styles from '../styles/Home.module.css'
 
+import styles from '../styles/pages/Home.module.css'
+import HeroSection from '../sections/HeroSection'
 export default function Home() {
   return (
 
+    <div className={styles.main}>
+      <HeroSection />
+      <HeroSection />
+    </div>
 
-      <h1 style={{marginTop: '200px'}}>Home</h1>
 
 
   )

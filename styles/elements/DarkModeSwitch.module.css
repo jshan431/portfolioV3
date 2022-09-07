@@ -6,6 +6,7 @@
   margin-left: 15px;
   overflow: hidden;
   border-radius: 34px;
+  margin-top: 4px;
 }
 
 .switch input { 
@@ -22,47 +23,17 @@
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: var(--primary-animation-transition);
+  transition: var(--primary-animation-transition);
   border-radius: 34px;
 }
 
 .slider.sliderDark {
-  background-color: blue;
-}
-
-/* .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-} */
-
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-
-.slider.round:before {
-  border-radius: 50%;
+  background-color: #242F9B;
 }
 
 .button {
+  z-index: 10;
   position: absolute;
   content: "";
   height: 26px;
@@ -70,15 +41,15 @@ input:checked + .slider:before {
   left: 4px;
   bottom: 4px;
   background-color: yellow;
-  -webkit-transition: .4s;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: var(--primary-animation-transition);
+  transition: var(--primary-animation-transition);
   border-radius: 50%;
 }
 
 .button.buttonDark {
-  background-color: white;
+  background-color: #fff;
   left: 30px;
-  transition: all 0.3s ease-in-out;
+  transition: var(--primary-animation-transition);
 }
 
 /* .button.buttonDark::before {
@@ -96,6 +67,7 @@ input:checked + .slider:before {
 } */
 
 .buttonLayer {
+  z-index: 10;
   position: absolute;
   content: "";
   height: 26px;
@@ -103,40 +75,44 @@ input:checked + .slider:before {
   left: 4px;
   bottom: 4px;
   background-color: transparent;
-  -webkit-transition: .4s;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: var(--primary-animation-transition);
+  transition: var(--primary-animation-transition);
   border-radius: 50%;
   opacity: 0;
 }
 
 .buttonLayer.buttonLayerDark {
-  background-color: blue;
+  background-color:#242F9B;
   left: 24px;
-  top: -3px;
+  top: -3px; 
   opacity: 1;
 }
 
 .starLarge {
-  margin: 8px 0;
+  margin: 9px 9px;
   position: relative;
   display: block;
   color: red;
   width: 0px;
   height: 0px;
-  border-right: 10px solid transparent;
-  border-bottom: 7px solid red;
-  border-left: 10px solid transparent;
-  transform: rotate(35deg);
+  border-right: 7px solid transparent;
+  border-bottom: 4px solid #fff;
+  border-left: 7px solid transparent;
+  transform: rotate(0deg) translate(0, -30px);
+  -webkit-transition: var(--primary-animation-transition);
+  transition: var(--primary-animation-transition);
+  transition-delay: .2s;
+  opacity: 0;
 }
 .starLarge:before {
-  border-bottom: 8px solid red;
-  border-left: 3px solid transparent;
-  border-right: 3px solid transparent;
+  border-bottom: 7px solid #fff;
+  border-left: 4px solid transparent;
+  border-right: 0px solid transparent;
   position: absolute;
   height: 0;
   width: 0;
-  top: -4.5px;
-  left: -6.5px;
+  top: -4px;
+  left: -4px;
   display: block;
   content: '';
   transform: rotate(-35deg);
@@ -145,13 +121,68 @@ input:checked + .slider:before {
   position: absolute;
   display: block;
   color: red;
-  top: 1px;
-  left: -11px;
+  top: 0px;
+  left: -7px;
   width: 0px;
   height: 0px;
-  border-right: 10px solid transparent;
-  border-bottom: 7px solid red;
-  border-left: 10px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 4px solid #fff;
+  border-left: 7px solid transparent;
   transform: rotate(-70deg);
   content: '';
+}
+
+.starLarge.starLargeDark{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.starSmall {
+  /* margin: 6px 13px; */
+  margin: 8px 0px 8px 6px;
+  position: relative;
+  display: block;
+  color: red;
+  width: 0px;
+  height: 0px;
+  border-right: 5px solid transparent;
+  border-bottom: 3px solid #fff;
+  border-left: 5px solid transparent;
+  -webkit-transition: var(--primary-animation-transition);
+  transition: var(--primary-animation-transition);
+  transition-delay: .1s;
+  transform: rotate(53deg) translateY(-20px);
+  opacity: 0;
+}
+.starSmall:before {
+  border-bottom: 5px solid #fff;
+  border-left: 3px solid transparent;
+  border-right: 2px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -2.5px;
+  left: -3.5px;
+  display: block;
+  content: '';
+  transform: rotate(-35deg);
+}
+.starSmall:after {
+  position: absolute;
+  display: block;
+  color: #fff;
+  top: 0px;
+  left: -5px;
+  width: 0px;
+  height: 0px;
+  border-right: 5px solid transparent;
+  border-bottom: 3px solid #fff;
+  border-left: 5px solid transparent;
+  transform: rotate(-70deg);
+  content: '';
+}
+
+.starSmall.starSmallDark{
+  transform: rotate(53deg) translateY(0);
+  opacity: 1;
 }

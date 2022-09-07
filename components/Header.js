@@ -52,7 +52,7 @@ export default function Header() {
                 About
               </Link>
             </li>
-            <li><a href="#">Services</a></li>
+            <li><a href={'/projects'}>Projects</a></li>
             <li><DarkModeSwitch /></li>
           </ul>
         </div>
