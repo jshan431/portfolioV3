@@ -52,7 +52,10 @@ export default function Header() {
                 About
               </Link>
             </li>
-            <li><a href={'/projects'}>Projects</a></li>
+            <li>              
+              <Link href={'/projects'} className="nav-link">
+                Projects
+              </Link></li>
             <li><DarkModeSwitch /></li>
           </ul>
         </div>
