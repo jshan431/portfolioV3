@@ -38,14 +38,16 @@ export default function Header() {
     <header className={styles.header}>
       <nav className={`${styles.nav} ${scrollPass ? styles.active : ''}`} ref={myRef}>
         <div className={styles.container}>
-          <h1 className="logo"><a href="/index.html">My Website</a></h1>
+          <h1 className="logo">
+            <Link href={'/'} className="nav-link">
+              Jack Shan
+            </Link>
+          </h1>
           <ul>
             <li>
-
                 <Link href={'/'} className="nav-link">
                   Home
                 </Link>
-
             </li>
             <li>
               <Link href={'/about'} className="nav-link">
