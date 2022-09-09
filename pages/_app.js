@@ -16,9 +16,9 @@ function MyApp({ Component, pageProps, router }) {
     <AppWrapper>
       <Layout router={router}>
         <AnimatePresence
-          exitBeforeEnter
           initial={false}
           onExitComplete={() => window.scrollTo(0, 0)}
+          mode='wait'
         >
         <motion.main
           key={router.route}
