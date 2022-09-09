@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styles from '../styles/sections/AboutSection.module.css';
-
+import Technologies from '../components/Technologies';
 export default function AboutSection() {
 
   const [selectedPanel, setSelectedPanel] = useState('first')
@@ -15,6 +15,7 @@ export default function AboutSection() {
         <h3>About Me</h3>
       </div>
       <div className={`${styles.panel} ${styles.panel02} ${selectedPanel === 'second' ? styles.active : ''}`} onClick={() => panelClick('second')}>
+        <Technologies />
         <h3>Technologies</h3>
       </div>
       <div className={`${styles.panel} ${styles.panel03} ${selectedPanel === 'third' ? styles.active : ''}`} onClick={() => panelClick('third')}>
