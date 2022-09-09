@@ -2,19 +2,24 @@
   height: 100%;
   width: 100%;
   background-color: red;
+  display: flex;
+  overflow: hidden;
 }
 
 .technologiesLineOne{
   height: 90%;
   border-left: 3px solid blue;
-  margin-left: 250px;
-  position: absolute;
+  /*margin-left: 250px;
+position: absolute; */
   transform: translateY(-500px);
   transition: all .8s ease-in 0.4s;
+  flex-grow: 1;
+  opacity: 0;
 }
 
 .technologiesLineOne.technologiesLineOneAnimate{
   transform: translateY(0px);
+  opacity: 1;
 }
 
 .technologiesLineOne:before{
@@ -27,9 +32,28 @@
 
 .technologyOne{
   position: absolute;
+  width: 125px;
+  height: 125px;
+  top: 10%;
+  background-color: #e44d26;
+  border: 5px solid yellow;
+  border-radius: 15px;
+  left: -3px;
+  transform: rotate(45deg);
+  transform-origin: top left;
+  overflow: hidden;
+}
+
+.technologyOneImageWrapper{
+  transform: rotate(300deg);
+  transform-origin: center;
+}
+
+.technologyTwo{
+  position: absolute;
   width: 150px;
   height: 150px;
-  bottom: 150px;
+  top: 50%;
   background-color: #f7e018;
   border: 5px solid yellow;
   border-radius: 15px;
@@ -37,4 +61,8 @@
   transform: rotate(45deg);
   transform-origin: top left;
   overflow: hidden;
+}
+
+.technologyPlaceholder{
+  flex-grow: .5;
 }
