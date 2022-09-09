@@ -48,7 +48,7 @@ export default function FeaturedProjects({}) {
 
   return (
     <div className={styles.sliderContainer} ref={myRef}>
-      <div className={styles.leftSlide} style={{top: leftSlideTop, transform: `translateY(${leftSlideTranslate}px)`}}>
+      <div className={styles.leftSlide} style={{top: `${leftSlideTop}px`, transform: `translateY(${leftSlideTranslate}px)`}}>
         <div className={styles.singleSlide} style={{backgroundColor: '#FD3555'}}>
           <h1>Nature flower</h1>
           <p>all in pink</p>
