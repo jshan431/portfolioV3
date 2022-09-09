@@ -48,7 +48,7 @@ export default function FeaturedProjectsMobile({}) {
 
   return (
     <div className={styles.sliderContainer} ref={myRef}>
-      <div className={styles.leftSlide} style={{left: leftSlideLeft, transform: `translateX(${leftSlideTranslate}px)`}}>
+      <div className={styles.leftSlide} style={{left: `${leftSlideLeft}px`, transform: `translateX(${leftSlideTranslate}px)`}}>
         <div className={styles.singleSlide} style={{backgroundColor: '#FD3555'}}>
           <h1>Nature flower</h1>
           <p>all in pink</p>
