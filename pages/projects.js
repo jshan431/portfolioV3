@@ -13,8 +13,8 @@ export default function Projects() {
 
   return (
     <div className={styles.mainProjects}>
-      {/* {isDesktopOrLaptop ? <FeaturedProjects /> : <FeaturedProjectsMobile />} */}
-      <FeaturedProjectsMobile />
+      {isDesktopOrLaptop ? <FeaturedProjects /> : <FeaturedProjectsMobile />}
+   
     </div>
   )
 }

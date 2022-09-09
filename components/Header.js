@@ -3,14 +3,14 @@ import { useRouter } from "next/router"
 import { motion } from "framer-motion"
 import Link from 'next/link'
 import styles from '../styles/components/Header.module.css'
-
 import DarkModeSwitch from "../elements/DarkModeSwitch";
+
+/* To get arrow icons to appear? */
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Header() {
 
   const {asPath} = useRouter()
-
-  console.log(asPath)
 
   const myRef = useRef()
 
