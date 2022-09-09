@@ -15,7 +15,7 @@ export default function AboutSection() {
         <h3>About Me</h3>
       </div>
       <div className={`${styles.panel} ${styles.panel02} ${selectedPanel === 'second' ? styles.active : ''}`} onClick={() => panelClick('second')}>
-        <Technologies />
+        <Technologies selectedPanel={selectedPanel}/>
         <h3>Technologies</h3>
       </div>
       <div className={`${styles.panel} ${styles.panel03} ${selectedPanel === 'third' ? styles.active : ''}`} onClick={() => panelClick('third')}>

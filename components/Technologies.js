@@ -1,11 +1,11 @@
 import styles from '../styles/components/Technologies.module.css'
 import Image from 'next/image'
 import javascriptLogo from '../public/images/javascript-logo-0.png'
-export default function Technologies() {
+export default function Technologies({selectedPanel}) {
 
   return (
     <div className={styles.technologiesContainer}>
-      <div className={styles.technologiesLineOne}>
+      <div className={`${styles.technologiesLineOne} ${selectedPanel === 'second' ? styles.technologiesLineOneAnimate: ''}`}>
         <div className={styles.technologyOne}>
           <Image 
             src={javascriptLogo}

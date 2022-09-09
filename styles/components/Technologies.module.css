@@ -9,6 +9,12 @@
   border-left: 3px solid blue;
   margin-left: 250px;
   position: absolute;
+  transform: translateY(-500px);
+  transition: all .8s ease-in 0.4s;
+}
+
+.technologiesLineOne.technologiesLineOneAnimate{
+  transform: translateY(0px);
 }
 
 .technologiesLineOne:before{
