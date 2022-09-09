@@ -11,19 +11,19 @@ export default function AboutSection() {
 
   return (
     <section className={styles.container}>
-      <div className={`${styles.panel} ${selectedPanel === 'first' ? styles.active : ''}`} onClick={() => panelClick('first')} style={{backgroundImage: "url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')"}}>
+      <div className={`${styles.panel} ${styles.panel01} ${selectedPanel === 'first' ? styles.active : ''}`} onClick={() => panelClick('first')}>
         <h3>About Me</h3>
       </div>
-      <div className={`${styles.panel} ${selectedPanel === 'second' ? styles.active : ''}`} onClick={() => panelClick('second')} style={{backgroundImage: "url('https://images.unsplash.com/photo-1572276596237-5db2c3e16c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')"}}>
+      <div className={`${styles.panel} ${styles.panel02} ${selectedPanel === 'second' ? styles.active : ''}`} onClick={() => panelClick('second')}>
         <h3>Technologies</h3>
       </div>
-      <div className={`${styles.panel} ${selectedPanel === 'third' ? styles.active : ''}`} onClick={() => panelClick('third')} style={{backgroundImage: "url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80')"}}>
+      <div className={`${styles.panel} ${styles.panel03} ${selectedPanel === 'third' ? styles.active : ''}`} onClick={() => panelClick('third')}>
         <h3>Photos</h3>
       </div>
-      <div className={`${styles.panel} ${selectedPanel === 'fourth' ? styles.active : ''}`} onClick={() => panelClick('fourth')} style={{backgroundImage: "url('https://images.unsplash.com/photo-1551009175-8a68da93d5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80')"}}>
+      <div className={`${styles.panel} ${styles.panel04} ${selectedPanel === 'fourth' ? styles.active : ''}`} onClick={() => panelClick('fourth')}>
         <h3>Clients</h3>
       </div>
-      <div className={`${styles.panel} ${selectedPanel === 'fifth' ? styles.active : ''}`} onClick={() => panelClick('fifth')} style={{backgroundImage: "url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')"}}>
+      <div className={`${styles.panel} ${styles.panel05} ${selectedPanel === 'fifth' ? styles.active : ''}`} onClick={() => panelClick('fifth')}>
         <h3>Contact</h3>
       </div>
     </section>
