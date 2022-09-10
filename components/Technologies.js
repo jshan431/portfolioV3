@@ -1,11 +1,19 @@
 import styles from '../styles/components/Technologies.module.css'
 import Image from 'next/image'
-import javascriptLogo from '../public/images/javascript-logo-0.png'
-import htmlLogo from '../public/images/html-logo.png'
+import javascriptLogo from '../public/images/technologies/javascript-logo-0.png'
+import htmlLogo from '../public/images/technologies/html-logo.png'
+import cssLogo from '../public/images/technologies/css-logo.png'
+import mongoDBLogo from '../public/images/technologies/mongo-db.png'
+import reactLogo from '../public/images/technologies/react-logo.png'
+import bootstrapLogo from '../public/images/technologies/bootstrap.png'
+import sqlLogo from '../public/images/technologies/sql.png'
+import nodeLogo from '../public/images/technologies/node.png'
+import awsLogo from '../public/images/technologies/aws.png'
+
 export default function Technologies({selectedPanel}) {
 
   return (
-    <div className={`${styles.technologiesContainer}`}>
+    <div className={`${styles.technologiesContainer} ${selectedPanel === 'second' ? styles.technologiesContainerAnimate: ''}`}>
       <div className={styles.technologyPlaceholder}>
 
       </div>
@@ -20,31 +28,83 @@ export default function Technologies({selectedPanel}) {
           </div>
         </div>
         <div className={styles.technologyTwo}>
-
+          <div className={styles.technologyTwoImageWrapper}>
             <Image 
-              src={javascriptLogo}
+              src={cssLogo}
               width={180}
               height={180}
             />
-
+          </div>
+        </div>
+        <div className={styles.technologyThree}>
+          <Image 
+            src={javascriptLogo}
+            width={180}
+            height={180}
+          />
         </div>
       </div>
-      <div className={styles.technologyPlaceholder}>
 
+      <div className={`${styles.technologiesLineTwo} ${selectedPanel === 'second' ? styles.technologiesLineTwoAnimate: ''}`}>
+        <div className={styles.lineTwoTechnologyOne}>
+          <Image 
+            src={mongoDBLogo}
+            width={180}
+            height={180}
+          />
+        </div>
+        <div className={styles.lineTwoTechnologyTwo}>
+          <div className={styles.lineTwoTechnologyTwoWrapper}>
+            <Image 
+              src={reactLogo}
+              width={180}
+              height={180}
+            />
+          </div>
+        </div>
+        <div className={styles.lineTwoTechnologyThree}>
+          <div className={styles.lineTwoTechnologyThreeWrapper}>
+            <Image 
+              src={sqlLogo}
+              width={180}
+              height={180}
+            />
+          </div>
+        </div>
       </div>
+
+      <div className={`${styles.technologiesLineThree} ${selectedPanel === 'second' ? styles.technologiesLineThreeAnimate: ''}`}>
+        
+        <div className={styles.lineThreeTechnologyOne}>
+          <div className={styles.lineThreeTechnologyOneWrapper}>
+            <Image 
+              src={awsLogo}
+              width={180}
+              height={180}
+            />
+          </div>
+        </div>
+        <div className={styles.lineThreeTechnologyTwo}>
+          <div className={styles.lineThreeTechnologyTwoWrapper}>
+            <Image 
+              src={bootstrapLogo}
+              width={180}
+              height={180}
+            />
+          </div>
+        </div>
+        <div className={styles.lineThreeTechnologyThree}>
+          <div className={styles.lineThreeTechnologyThreeWrapper}>
+            <Image 
+              src={nodeLogo}
+              width={180}
+              height={180}
+            />
+          </div>
+        </div>
+      </div>
+
     </div>
   )
 }
 
-/*
-
-            <Image
-              src={photos[0].attributes.formats.medium.url}
-              width={642}
-              height={361.13}
-              srl_gallery_image="true"
-              placeholder="blur"
-              blurDataURL={photos[0].attributes.formats.thumbnail.url}
-            />
-
-*/

@@ -1,16 +1,20 @@
 .technologiesContainer{
   height: 100%;
   width: 100%;
-  background-color: red;
+  background-color: transparent;
   display: flex;
   overflow: hidden;
+  transition: all .3s ease-in 0.2s;
+}
+
+.technologiesContainer.technologiesContainerAnimate{
+  background-color: var(--secondary-color-transparent);
 }
 
 .technologiesLineOne{
   height: 90%;
-  border-left: 3px solid blue;
-  /*margin-left: 250px;
-position: absolute; */
+  border-left: 3px solid var(--primary-color);
+  position: relative;
   transform: translateY(-500px);
   transition: all .8s ease-in 0.4s;
   flex-grow: 1;
@@ -25,7 +29,7 @@ position: absolute; */
 .technologiesLineOne:before{
   content: '';
   height: 100%;
-  border-left: 3px solid black;
+  border-left: 3px solid var(--secondary-color);
   position: absolute;
   left: -6px;
 }
@@ -34,9 +38,9 @@ position: absolute; */
   position: absolute;
   width: 125px;
   height: 125px;
-  top: 10%;
+  top: 5%;
   background-color: #e44d26;
-  border: 5px solid yellow;
+  border: 5px solid var(--quaternary-color);
   border-radius: 15px;
   left: -3px;
   transform: rotate(45deg);
@@ -51,11 +55,11 @@ position: absolute; */
 
 .technologyTwo{
   position: absolute;
-  width: 150px;
-  height: 150px;
-  top: 50%;
-  background-color: #f7e018;
-  border: 5px solid yellow;
+  width: 100px;
+  height: 100px;
+  top: 35%;
+  background-color: #379ad6;
+  border: 5px solid var(--quaternary-color);
   border-radius: 15px;
   left: -3px;
   transform: rotate(45deg);
@@ -63,6 +67,184 @@ position: absolute; */
   overflow: hidden;
 }
 
-.technologyPlaceholder{
-  flex-grow: .5;
+.technologyTwoImageWrapper{
+  transform: rotate(330deg);
+  transform-origin: center;
 }
+
+.technologyThree{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 55%;
+  background-color: #f7e018;
+  border: 5px solid var(--quaternary-color);
+  border-radius: 15px;
+  left: -3px;
+  transform: rotate(45deg);
+  transform-origin: top left;
+  overflow: hidden;
+}
+
+.technologiesLineTwo{
+  height: 80%;
+  border-left: 3px solid var(--primary-color);
+  position: relative;
+  transform: translateY(-600px);
+  transition: all .4s ease-in 0.4s; 
+  flex-grow: 1;
+  opacity: 0;
+}
+
+.technologiesLineTwo.technologiesLineTwoAnimate{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.technologiesLineTwo:before{
+  content: '';
+  height: 100%;
+  border-left: 3px solid var(--secondary-color);
+  position: absolute;
+  left: -6px;
+}
+
+.lineTwoTechnologyOne{
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: 0%;
+  background-color: white;
+  border: 5px solid var(--quaternary-color);
+  border-radius: 15px;
+  left: -3px;
+  transform: rotate(45deg);
+  transform-origin: top left;
+  overflow: hidden;
+}
+
+.lineTwoTechnologyTwo{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 20%;
+  background-color: navy;
+  border: 5px solid var(--quaternary-color);
+  border-radius: 15px;
+  left: -3px;
+  transform: rotate(45deg);
+  transform-origin: top left;
+  overflow: hidden;
+}
+
+.lineTwoTechnologyTwoWrapper{
+  transform: rotate(270deg);
+  transform-origin: center;
+}
+
+.lineTwoTechnologyThree{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  background-color: lavender;
+  border: 5px solid var(--quaternary-color);
+  border-radius: 15px;
+  left: -3px;
+  transform: rotate(45deg);
+  transform-origin: top left;
+  overflow: hidden;
+}
+
+.lineTwoTechnologyThreeWrapper{
+  padding: 10px;
+  transform: rotate(270deg);
+  transform-origin: center;
+}
+
+.technologiesLineThree{
+  height: 85%;
+  border-left: 3px solid var(--primary-color);
+  position: relative;
+  transform: translateY(-800px);
+  transition: all .6s ease-in 0.4s;
+  flex-grow: 1;
+  opacity: 0;
+}
+
+.technologiesLineThree.technologiesLineThreeAnimate{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.technologiesLineThree:before{
+  content: '';
+  height: 100%;
+  border-left: 3px solid var(--secondary-color);
+  position: absolute;
+  left: -6px;
+}
+
+.lineThreeTechnologyOne{
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  top: 5%;
+  background-color: lightblue;
+  border: 5px solid var(--quaternary-color);
+  border-radius: 15px;
+  left: -3px;
+  transform: rotate(45deg);
+  transform-origin: top left;
+  overflow: hidden;
+}
+
+.lineThreeTechnologyOneWrapper{
+  padding: 10px;
+  transform: rotate(318deg);
+  transform-origin: center;
+}
+
+.lineThreeTechnologyTwo{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 37%;
+  background-color: lightgreen;
+  border: 5px solid var(--quaternary-color);
+  border-radius: 15px;
+  left: -3px;
+  transform: rotate(45deg);
+  transform-origin: top left;
+  overflow: hidden;
+}
+
+.lineThreeTechnologyTwoWrapper{
+  padding: 10px;
+
+}
+
+.lineThreeTechnologyThree{
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  top: 60%;
+  background-color: darkgray;
+  border: 5px solid var(--quaternary-color);
+  border-radius: 15px;
+  left: -3px;
+  transform: rotate(45deg);
+  transform-origin: top left;
+  overflow: hidden;
+}
+
+.lineThreeTechnologyThreeWrapper{
+  padding: 10px;
+  transform: rotate(300deg);
+  transform-origin: center;
+}
+
+.technologyPlaceholder{
+  flex-grow: 1;
+}
+

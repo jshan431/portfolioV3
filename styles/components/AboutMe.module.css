@@ -1,0 +1,40 @@
+.aboutMeContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 8.1rem);
+  padding: 2rem;
+  overflow: hidden;
+  opacity: 0;
+  transition: all .3s ease-in 0.2s;
+}
+
+.aboutMeContainer.aboutMeContainerAnimate{
+  background-color: var(--secondary-color-transparent);
+  opacity: 1;
+}
+
+.wordsContainer{
+  /* display: flex; */
+  /* flex: 1; */
+  position: absolute;
+  overflow: hidden;
+  /* width: 500px; */
+  overflow-wrap: no-wrap;
+  hyphens: auto;
+}
+
+.textWords{
+  margin-right: 5px;
+  font-size: 32px;
+}
+
+/**
+  white-space: nowrap;
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  white-space: normal;
+*/
