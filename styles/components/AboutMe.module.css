@@ -10,6 +10,12 @@
   transition: all .3s ease-in 0.2s;
 }
 
+@media (max-width: 930px) {
+  .aboutMeContainer{
+    height: calc(56vh - 8.1rem);
+  }
+}
+
 .aboutMeContainer.aboutMeContainerAnimate{
   background-color: var(--secondary-color-transparent);
   opacity: 1;

@@ -7,6 +7,12 @@
   transition: all .3s ease-in 0.2s;
 }
 
+@media (max-width: 930px) {
+  .technologiesContainer{
+    height: calc(100vh - 59px);
+  }
+}
+
 .technologiesContainer.technologiesContainerAnimate{
   background-color: var(--secondary-color-transparent);
 }
