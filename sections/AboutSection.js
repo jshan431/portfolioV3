@@ -2,7 +2,8 @@ import { useState } from 'react';
 import styles from '../styles/sections/AboutSection.module.css';
 import Technologies from '../components/Technologies';
 import AboutMe from '../components/AboutMe';
-
+import Photos from '../components/Photos';
+import Contact from '../components/Contact';
 export default function AboutSection() {
 
   const [selectedPanel, setSelectedPanel] = useState('first')
@@ -22,12 +23,14 @@ export default function AboutSection() {
         <h3>Technologies</h3>
       </div>
       <div className={`${styles.panel} ${styles.panel03} ${selectedPanel === 'third' ? styles.active : ''}`} onClick={() => panelClick('third')}>
+        <Photos selectedPanel={selectedPanel}/>
         <h3>Photos</h3>
       </div>
       <div className={`${styles.panel} ${styles.panel04} ${selectedPanel === 'fourth' ? styles.active : ''}`} onClick={() => panelClick('fourth')}>
         <h3>Clients</h3>
       </div>
       <div className={`${styles.panel} ${styles.panel05} ${selectedPanel === 'fifth' ? styles.active : ''}`} onClick={() => panelClick('fifth')}>
+        <Contact selectedPanel={selectedPanel}/>
         <h3>Contact</h3>
       </div>
     </section>
