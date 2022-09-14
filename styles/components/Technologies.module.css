@@ -9,7 +9,13 @@
 
 @media (max-width: 930px) {
   .technologiesContainer{
-    height: calc(100vh - 59px);
+    height: calc(80vh - 5.9rem);
+  }
+}
+
+@media (max-width: 500px) {
+  .technologiesContainer{
+    height: calc(100vh - 5.9rem);
   }
 }
 

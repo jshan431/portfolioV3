@@ -11,9 +11,15 @@
 }
 
 @media (max-width: 930px) {
-  /* .aboutMeContainer{
-    height: calc(56vh - 8.1rem);
-  } */
+  .aboutMeContainer{
+    height: calc(50vh - 8.1rem);
+  }
+}
+
+@media (max-width: 500px) {
+  .aboutMeContainer{
+    height: calc(100vh - 8.1rem);
+  }
 }
 
 .aboutMeContainer.aboutMeContainerAnimate{
