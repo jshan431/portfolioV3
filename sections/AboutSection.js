@@ -4,6 +4,7 @@ import Technologies from '../components/Technologies';
 import AboutMe from '../components/AboutMe';
 import Photos from '../components/Photos';
 import Contact from '../components/Contact';
+import Clients from '../components/Clients';
 export default function AboutSection() {
 
   const [selectedPanel, setSelectedPanel] = useState('first')
@@ -27,6 +28,7 @@ export default function AboutSection() {
         <h3>Photos</h3>
       </div>
       <div className={`${styles.panel} ${styles.panel04} ${selectedPanel === 'fourth' ? styles.active : ''}`} onClick={() => panelClick('fourth')}>
+        <Clients/>
         <h3>Clients</h3>
       </div>
       <div className={`${styles.panel} ${styles.panel05} ${selectedPanel === 'fifth' ? styles.active : ''}`} onClick={() => panelClick('fifth')}>

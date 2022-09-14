@@ -11,9 +11,9 @@
 }
 
 @media (max-width: 930px) {
-  .aboutMeContainer{
+  /* .aboutMeContainer{
     height: calc(56vh - 8.1rem);
-  }
+  } */
 }
 
 .aboutMeContainer.aboutMeContainerAnimate{
@@ -30,6 +30,14 @@
   width: 44.4rem;
   overflow-wrap: no-wrap;
   hyphens: auto;
+
+
+}
+
+@media (max-width: 930px) {
+  .wordsContainer{
+    width: auto
+  }
 }
 
 .textWords{

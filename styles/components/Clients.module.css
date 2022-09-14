@@ -1,0 +1,9 @@
+.clientContainer{
+  height: 100vh;
+}
+
+@media (max-width: 992px) {
+  .clientContainer{
+    height: calc(100vh - 5.9rem);
+  }
+}

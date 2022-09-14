@@ -15,6 +15,12 @@
 
 }
 
+@media (max-width: 992px) {
+  .photosContainer{
+    height: calc(100vh - 5.9rem);
+  }
+}
+
 .photosContainer::before {
   content: '';
   position: absolute;

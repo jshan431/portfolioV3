@@ -42,8 +42,8 @@
 
 .technologyOne{
   position: absolute;
-  width: 125px;
-  height: 125px;
+  width: 12.5rem;
+  height: 12.5rem;
   top: 5%;
   background-color: #e44d26;
   border: 5px solid var(--quaternary-color);
@@ -54,6 +54,13 @@
   overflow: hidden;
 }
 
+/* @media (max-width: 450px) {
+  .technologyOne{
+    width: 100px;
+    height: 100px;
+  }
+} */
+
 .technologyOneImageWrapper{
   transform: rotate(300deg);
   transform-origin: center;
@@ -61,8 +68,8 @@
 
 .technologyTwo{
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 10rem;
+  height: 10rem;
   top: 35%;
   background-color: #379ad6;
   border: 5px solid var(--quaternary-color);
@@ -73,6 +80,13 @@
   overflow: hidden;
 }
 
+/* @media (max-width: 450px) {
+  .technologyTwo{
+    width: 75px;
+    height: 75px;
+  }
+} */
+
 .technologyTwoImageWrapper{
   transform: rotate(330deg);
   transform-origin: center;
@@ -80,8 +94,8 @@
 
 .technologyThree{
   position: absolute;
-  width: 150px;
-  height: 150px;
+  width: 15rem;
+  height: 15rem;
   top: 55%;
   background-color: #f7e018;
   border: 5px solid var(--quaternary-color);
@@ -117,8 +131,8 @@
 
 .lineTwoTechnologyOne{
   position: absolute;
-  width: 75px;
-  height: 75px;
+  width: 7.5rem;
+  height: 7.5rem;
   top: 0%;
   background-color: white;
   border: 5px solid var(--quaternary-color);
@@ -131,8 +145,8 @@
 
 .lineTwoTechnologyTwo{
   position: absolute;
-  width: 150px;
-  height: 150px;
+  width: 15rem;
+  height: 15rem;
   top: 20%;
   background-color: navy;
   border: 5px solid var(--quaternary-color);
@@ -150,9 +164,9 @@
 
 .lineTwoTechnologyThree{
   position: absolute;
-  width: 100px;
-  height: 100px;
-  top: 50%;
+  width: 10rem;
+  height: 10rem;
+  top: 55%;
   background-color: lavender;
   border: 5px solid var(--quaternary-color);
   border-radius: 15px;
@@ -163,7 +177,7 @@
 }
 
 .lineTwoTechnologyThreeWrapper{
-  padding: 10px;
+  padding: 1rem;
   transform: rotate(270deg);
   transform-origin: center;
 }
@@ -193,12 +207,12 @@
 
 .lineThreeTechnologyOne{
   position: absolute;
-  width: 125px;
-  height: 125px;
+  width: 12.5rem;
+  height: 12.5rem;
   top: 5%;
   background-color: lightblue;
   border: 5px solid var(--quaternary-color);
-  border-radius: 15px;
+  border-radius: 1.5rem;
   left: -3px;
   transform: rotate(45deg);
   transform-origin: top left;
@@ -206,19 +220,19 @@
 }
 
 .lineThreeTechnologyOneWrapper{
-  padding: 10px;
+  padding: 1rem;
   transform: rotate(318deg);
   transform-origin: center;
 }
 
 .lineThreeTechnologyTwo{
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 10rem;
+  height: 10rem;
   top: 37%;
   background-color: lightgreen;
   border: 5px solid var(--quaternary-color);
-  border-radius: 15px;
+  border-radius: 1.5rem;
   left: -3px;
   transform: rotate(45deg);
   transform-origin: top left;
@@ -226,18 +240,18 @@
 }
 
 .lineThreeTechnologyTwoWrapper{
-  padding: 10px;
+  padding: 1rem;
 
 }
 
 .lineThreeTechnologyThree{
   position: absolute;
-  width: 125px;
-  height: 125px;
+  width: 12.5rem;
+  height: 12.5rem;
   top: 60%;
   background-color: darkgray;
-  border: 5px solid var(--quaternary-color);
-  border-radius: 15px;
+  border: .5rem solid var(--quaternary-color);
+  border-radius: 1.5rem;
   left: -3px;
   transform: rotate(45deg);
   transform-origin: top left;
@@ -245,7 +259,7 @@
 }
 
 .lineThreeTechnologyThreeWrapper{
-  padding: 10px;
+  padding: 1rem;
   transform: rotate(300deg);
   transform-origin: center;
 }

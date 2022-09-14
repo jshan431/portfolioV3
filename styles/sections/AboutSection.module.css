@@ -10,6 +10,7 @@
   .container{
     flex-direction: column;
     overflow: visible;
+    height: auto;
   }
 }
 
@@ -50,6 +51,12 @@
   transform-origin: top left;
   white-space: nowrap;
   transition: all 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 930px) {
+  .panel h3{
+    font-size: 5rem;
+  }
 }
 
 .panel.active {

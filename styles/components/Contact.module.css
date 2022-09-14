@@ -9,6 +9,12 @@
   position: relative;
 }
 
+@media (max-width: 992px) {
+  .contactContainer{
+    height: calc(100vh - 5.9rem);
+  }
+}
+
 
 .contactFormContainer {
   background-color: rgba(0, 0, 0, 0.4);
