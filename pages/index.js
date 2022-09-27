@@ -6,7 +6,6 @@ export default function Home() {
 
     <div className={styles.main}>
       <HeroSection />
-      <HeroSection />
     </div>
 
 

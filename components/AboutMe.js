@@ -1,5 +1,6 @@
-import { motion } from "framer-motion";
-
+import { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import Parallax from 'react-rellax'
 import styles from '../styles/components/AboutMe.module.css'
 
 export default function AboutMe({selectedPanel}) {
@@ -47,45 +48,68 @@ export default function AboutMe({selectedPanel}) {
 
   };
 
+  // const testControls = useAnimation();
+
+  // useEffect(() => {
+  //     testControls.start({
+  //         rotate: 360,
+  //         // transition: { repeat: Infinity, ease: 'linear' }
+  //     })
+  // }, []);
 
   return (
+    <>
     <div className={`${styles.aboutMeContainer} ${selectedPanel === 'first' ? styles.aboutMeContainerAnimate: ''}`}>
       <motion.div 
         initial="hidden"
         animate="visible"
+        // animate={testControls}
         variants={container}
         transition={{ delay: .5}}
         className={styles.wordsContainer}
       >
-        {words1.map((word, index) => (
-          <motion.span variants={child} className={styles.textWords} key={index} lang="de">
-            {word}
-          </motion.span>
-        ))}
+        <Parallax speed={-1}>
+          {words1.map((word, index) => (
+            <motion.span variants={child} className={styles.textWords} key={index} lang="de">
+              {word}
+            </motion.span>
+          ))}
+        </Parallax>
         <br/>
         <br/>
-        {words2.map((word, index) => (
-          <motion.span variants={child} className={styles.textWords} key={index} lang="de">
-            {word}
-          </motion.span>
-        ))}
+        <Parallax speed={-1}>
+          {words2.map((word, index) => (
+            <motion.span variants={child} className={styles.textWords} key={index} lang="de">
+              {word}
+            </motion.span>
+          ))}
+        </Parallax>
         <br/>
         <br/>
-        {words3.map((word, index) => (
-          <motion.span variants={child} className={styles.textWords} key={index} lang="de">
-            {word}
-          </motion.span>
-        ))}
+        <Parallax speed={-1}>
+          {words3.map((word, index) => (
+            <motion.span variants={child} className={styles.textWords} key={index} lang="de">
+              {word}
+            </motion.span>
+          ))}
+        </Parallax>
         <br/>
         <br/>
-        {words4.map((word, index) => (
-          <motion.span variants={child} className={styles.textWords}  key={index} lang="de">
-            {word}
-          </motion.span>
-        ))}
+        <Parallax speed={-1}>
+          {words4.map((word, index) => (
+            <motion.span variants={child} className={styles.textWords}  key={index} lang="de">
+              {word}
+            </motion.span>
+          ))}
+        </Parallax>
       </motion.div>
     </div>
-
+    {/* <motion.div 
+        animate={testControls}
+    >
+      Hello
+    </motion.div> */}
+    </>
   )
 }
 

@@ -20,7 +20,7 @@
 }
 
 .technologiesContainer.technologiesContainerAnimate{
-  background-color: var(--secondary-color-transparent);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .technologiesLineOne{

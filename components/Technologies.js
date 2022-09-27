@@ -1,3 +1,4 @@
+import Parallax from 'react-rellax'
 import styles from '../styles/components/Technologies.module.css'
 import Image from 'next/image'
 import javascriptLogo from '../public/images/technologies/javascript-logo-0.png'
@@ -17,34 +18,36 @@ export default function Technologies({selectedPanel}) {
       <div className={styles.technologyPlaceholder}>
 
       </div>
-      <div className={`${styles.technologiesLineOne} ${selectedPanel === 'second' ? styles.technologiesLineOneAnimate: ''}`}>
-        <div className={styles.technologyOne}>
-          <div className={styles.technologyOneImageWrapper}>
-            <Image 
-              src={htmlLogo}
-              width={180}
-              height={180}
-            />
-          </div>
-        </div>
-        <div className={styles.technologyTwo}>
-          <div className={styles.technologyTwoImageWrapper}>
-            <Image 
-              src={cssLogo}
-              width={180}
-              height={180}
-            />
-          </div>
-        </div>
-        <div className={styles.technologyThree}>
-          <Image 
-            src={javascriptLogo}
-            width={180}
-            height={180}
-          />
-        </div>
-      </div>
+        <div className={`${styles.technologiesLineOne} ${selectedPanel === 'second' ? styles.technologiesLineOneAnimate: ''}`}>
 
+            <div className={styles.technologyOne}>
+              <div className={styles.technologyOneImageWrapper}>
+                <Image 
+                  src={htmlLogo}
+                  width={180}
+                  height={180}
+                />
+              </div>
+            </div>
+
+          <div className={styles.technologyTwo}>
+            <div className={styles.technologyTwoImageWrapper}>
+              <Image 
+                src={cssLogo}
+                width={180}
+                height={180}
+              />
+            </div>
+          </div>
+
+          <div className={styles.technologyThree}>
+            <Image 
+              src={javascriptLogo}
+              width={180}
+              height={180}
+            />
+          </div>
+        </div>
       <div className={`${styles.technologiesLineTwo} ${selectedPanel === 'second' ? styles.technologiesLineTwoAnimate: ''}`}>
         <div className={styles.lineTwoTechnologyOne}>
           <Image 
