@@ -9,7 +9,7 @@
   flex-direction: column;
 }
 
-.leftSlide{
+.topSlide{
   height: 35%;
   width: fit-content;
   position: relative;
@@ -19,7 +19,7 @@
   flex-wrap: nowrap;
 }
 
-.leftSlide > div {
+.topSlide > div {
   /* height: 100%; */
   width: 100vw;
   display: flex;
@@ -29,7 +29,7 @@
   color: #fff;
 }
 
-.leftSlide h1 {
+.topSlide h1 {
   font-size: 40px;
   margin-bottom: 10px;
   margin-top: -30px;
