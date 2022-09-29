@@ -1,6 +1,6 @@
 .sliderContainer{
   /* height: 100vh; */
-  height: calc(100vh - 8.1rem);
+  height: calc(100vh - 6.05rem);
   background-color: blue;
   position: relative;
   overflow: hidden;

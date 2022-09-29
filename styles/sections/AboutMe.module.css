@@ -1,0 +1,120 @@
+.container{
+  height: calc(100vh - 6.05rem);
+  /* height: calc(100vh - 4.05rem); */
+  background-color: red;
+  display: flex;
+}
+
+.aboutMeLeft{
+  background-color: var(--secondary-color);
+  width: 50%;
+  /* height: 100%; */
+  height: calc(100vh - 6.05rem);
+  padding: 5rem;
+
+}
+
+.aboutMeLeftBox{
+  /* height: 33.33%; */
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+.aboutMeLeftTechnologiesRow, .aboutMeLeftClientsRow{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .aboutMeLeftClientsRow{
+  display: flex;
+  justify-content: space-between;
+} */
+
+.technology{
+  width: 10rem;
+  height: 10rem;
+  /* background-color: #e44d26; */
+  background-color: transparent;
+  /* border: 5px solid var(--quaternary-color); */
+  /* border-radius: 15px; */
+  /* left: -3px; */
+  /* transform: rotate(45deg);
+  transform-origin: top left; */
+  /* overflow: hidden; */
+
+}
+
+.technologyImageWrapper{
+  /* transform: rotate(300deg);
+  transform-origin: center; */
+}
+
+.client{
+  width: 12rem;
+  /* height: 12rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 420px) {
+  .client{
+    width: 11rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .client{
+    width: 10rem;
+  }
+}
+
+@media (min-width: 880px) and (max-width: 920px) {
+  .client{
+    width: 11rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 879px) {
+  .client{
+    width: 10rem;
+  }
+}
+
+.aboutMeLeft h3{
+  font-size: 3rem;
+  width: auto;
+  color: var(--primary-text-color);
+}
+
+.aboutMeLeft h4{
+  font-size: 2rem;
+  width: auto;
+  color: var(--secondary-text-color);
+}
+
+.aboutMeRight{
+  /* background-color: orange; */
+  width: 50%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .aboutMeLeft{
+    width: 100%;
+    /* height: 100%; */
+    height: auto;
+  }
+  
+  .aboutMeRight{
+    width: 100%;
+    /* height: 100%; */
+    height: calc(100vh - 6.05rem);
+  }
+
+}

@@ -4,22 +4,22 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 8.1rem);
+  height: calc(100vh - 6.05rem);
   overflow: hidden;
   margin: 0;
   background-position: center center;
   background-size: cover;
   transition: 0.4s;
   position: relative;
-  opacity: 0;
+  /* opacity: 0; */
 
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .photosContainer{
     height: calc(100vh - 5.9rem);
   }
-}
+} */
 
 .photosContainer::before {
   content: '';
@@ -42,7 +42,7 @@
   width: 70%;
   position: relative;
   overflow: hidden;
-
+  z-index: 3;
 }
 
 .slide {
@@ -69,7 +69,7 @@
   color: #fff;
   padding: 20px;
   font-size: 30px;
-  border: 2px solid orange;
+  border: 2px solid var(--quaternary-color);
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
