@@ -15,11 +15,18 @@ export default function Home() {
   })
 
   const [dimensions, setDimensions] = useState({ 
-    height: undefined,
-    width: undefined
+    // height: undefined,
+    // width: undefined
   })
 
   useEffect(() => {
+
+    if(!dimensions.width){
+      setDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth
+      })
+    }
 
     function handleResize() {
       setDimensions({
@@ -40,7 +47,12 @@ export default function Home() {
     <div className={styles.main}>
       <HeroSection />
       <AboutMe />
-      {isDesktopOrLaptop ? <FeaturedProjects /> : <FeaturedProjectsMobile />}
+      <div>
+        {/* {isDesktopOrLaptop ? <FeaturedProjects /> :  <FeaturedProjectsMobile />} */}
+        {/* {dimensions.width ? <FeaturedProjects /> : <div>Hello</div>} */}
+        {dimensions.width && isDesktopOrLaptop ? <FeaturedProjects /> :  <FeaturedProjectsMobile />}
+      </div>
+
 
     </div>
   )
