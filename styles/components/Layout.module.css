@@ -1,14 +1,14 @@
 .contents {
 
-  --primary-color: #6E85B7;
-  --secondary-color: #C1DEAE;
-  --secondary-color-transparent: rgba(193, 222, 174, .7);
-  --tertiary-color: #B088F9;
-  --tertiary-color-transparent: rgba(176,136,249, .7);
+  --primary-color: #3d5cac;
+  --secondary-color: #2275d9;
+  --secondary-color-transparent: rgba(34, 117, 217, .7);
+  --tertiary-color: #8b67c3;
+  --tertiary-color-transparent: rgba(139,103,195, .7);
   --quaternary-color: #FF4646;
 
   --primary-text-color: #222;
-  --secondary-text-color: #A9A9A9;
+  --secondary-text-color: #353535;
 }
 
 .contents.contentDark {

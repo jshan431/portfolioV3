@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { motion } from 'framer-motion'
 import Header from './Header'
-//import Footer from './Footer'
+import Footer from './Footer'
 import { useAppContext } from "../AppContext";
 
 import styles from '../styles/components/Layout.module.css'
@@ -22,6 +22,7 @@ export default function Layout({title, keywords, description, children}) {
       </Head>
       <Header />
         {children}
+      <Footer />
     </div>
   )
 }

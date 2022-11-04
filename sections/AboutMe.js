@@ -1,3 +1,5 @@
+
+import { useMediaQuery } from 'react-responsive'
 // import { useState } from 'react';
 import styles from '../styles/sections/AboutMe.module.css';
 // import Technologies from '../components/Technologies';
@@ -27,17 +29,21 @@ import jadaLogo from '../public/images/clients/jada.png'
 
 export default function AboutMe() {
 
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 992px)'
+  })
+
   return (
     <section className={styles.container}>
       <div className={styles.aboutMeLeft}>
         <div className={styles.aboutMeLeftText + ' ' + styles.aboutMeLeftBox}>
-          <h4>- My Story</h4>
+          <h4 className={styles.headingText}>- My Story</h4>
           <h4 className='pt-2'>
-            Since graduating San Francisco State University with a B.S in Computer Science, I've been working as a freelance Web Developer and have had the privelege of working with some incredible clients using various web technologies.
+            Since graduating at San Francisco State University with a B.S in Computer Science, I've been working as a freelance Web Developer and have had the privelege of working with some incredible clients using various web technologies.
           </h4>
         </div>
         <div className={'pt-4 ' + styles.aboutMeLeftBox}>
-          <h4>- Tech Stack</h4>
+          <h4 className={styles.headingText}>- Tech Stack</h4>
           <div className={'pt-2 ' + styles.aboutMeLeftTechnologiesRow}>
             <div className={styles.technology}>
               <Image 
@@ -109,7 +115,7 @@ export default function AboutMe() {
           </div>
         </div>
         <div className={'pt-4 ' + styles.aboutMeLeftBox}>
-          <h4>- Clients</h4>
+          <h4 className={styles.headingText}>- Clients</h4>
           <div className={'pt-2 ' + styles.aboutMeLeftClientsRow}>
             <div className={styles.client}>
               <Image 

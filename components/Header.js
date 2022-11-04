@@ -53,13 +53,13 @@ export default function Header() {
                 </a>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href={'/about'} className={styles.navLogoLink}>
                 <a className={`${styles.navLink} ${asPath === '/about' ? styles.navLinkCurrent : ''}`}>
                   About
                 </a>
               </Link>
-            </li>
+            </li> */}
             <li>              
               <Link href={'/projects'} className={styles.navLogoLink}>
                 <a className={`${styles.navLink} ${asPath === '/projects' ? styles.navLinkCurrent : ''}`}>

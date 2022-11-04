@@ -1,0 +1,12 @@
+.footer{
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--primary-color);
+}
+
+.text a{
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: var(--quaternary-color);
+}

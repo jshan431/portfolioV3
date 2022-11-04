@@ -5,11 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function Photos({selectedPanel}) {
 
   const bgArray = [
-    'https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80',
-    'https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80',
-    'https://images.unsplash.com/photo-1495467033336-2effd8753d51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80',
-    'https://images.unsplash.com/photo-1522735338363-cc7313be0ae0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2689&q=80',
-    'https://images.unsplash.com/photo-1559087867-ce4c91325525?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80'
+    '/images/jshan1.jpg',
+    '/images/jshan2.jpg'
   ]
 
   // const [activeIdx, setActiveIdx] = useState(1)
@@ -30,7 +27,7 @@ export default function Photos({selectedPanel}) {
     if(activeIdx.idx === 0){
       setActiveIdx({
         ...activeIdx,
-        idx: activeIdx.idx + 4
+        idx: activeIdx.idx + 1
       })
     } else {
       setActiveIdx({
@@ -56,10 +53,10 @@ export default function Photos({selectedPanel}) {
     //   ...activeIdx,
     //   idx: activeIdx.idx + 1
     // })
-    if(activeIdx.idx === 4){
+    if(activeIdx.idx === 1){
       setActiveIdx({
         ...activeIdx,
-        idx: activeIdx.idx - 4
+        idx: activeIdx.idx - 1
       })
     } else {
       setActiveIdx({
@@ -76,16 +73,16 @@ export default function Photos({selectedPanel}) {
         <div
           className={`${styles.slide} ${activeIdx.idx === 0 ? styles.active : ''}`}
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80')"
+            backgroundImage: "url('/images/jshan1.jpg')"
           }}
         ></div>
         <div
           className={`${styles.slide} ${activeIdx.idx === 1 ? styles.active : ''}`}
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80')"
+            backgroundImage: "url('/images/jshan2.jpg')"
           }}
         ></div>
-        <div
+        {/* <div
           className={`${styles.slide} ${activeIdx.idx === 2 ? styles.active : ''}`}
           style={{
             backgroundImage: "url('https://images.unsplash.com/photo-1495467033336-2effd8753d51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80')"
@@ -102,7 +99,7 @@ export default function Photos({selectedPanel}) {
           style={{
             backgroundImage: "url('https://images.unsplash.com/photo-1559087867-ce4c91325525?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80')"
           }}
-        ></div>
+        ></div> */}
 
       </div>
       <button className={`${styles.arrow} ${styles.leftArrow}`} id="left" onClick={handleLeftClick}>

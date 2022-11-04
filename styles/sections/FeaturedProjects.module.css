@@ -45,7 +45,7 @@
 .rightSlide > div {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: top left;
   min-height: 100%;
   width: 100%;
 }
@@ -78,10 +78,30 @@
   transform: translateX(-100%);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  border-left: 1px solid var(--quaternary-color);
+  border-top: 1px solid var(--quaternary-color);
+  border-bottom: 1px solid var(--quaternary-color);
 }
 
 .sliderContainer .actionButtons .upButton {
   transform: translateY(-100%);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-bottom: 1px solid var(--quaternary-color);
+  border-top: 1px solid var(--quaternary-color);
+  border-right: 1px solid var(--quaternary-color);
 } 
+
+.singleSlide p{
+  font-size: 1.5rem;
+}
+
+.singleSlide h1 a{
+  color: white;
+  text-decoration: none;
+  transition: all .5s;
+}
+
+.singleSlide h1 a:hover{
+  color: var(--quaternary-color);
+}

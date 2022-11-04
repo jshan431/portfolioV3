@@ -93,6 +93,10 @@
   color: var(--secondary-text-color);
 }
 
+.aboutMeLeft .headingText{
+  color: var(--quaternary-color);
+}
+
 .aboutMeRight{
   /* background-color: orange; */
   width: 50%;

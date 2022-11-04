@@ -36,12 +36,13 @@
 }
 
 .nav.active {
-  background-color: #fff;
+  background-color: var(--tertiary-color);
   box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.3);
 }
 
 .nav.active a {
   color: #000;
+  color: var(--secondary-text-color);
 }
 
 .nav.active .container {
@@ -72,7 +73,7 @@
 }
 
 .navLinkCurrent{
-  color: #c0392b;
+  color: #c0392b!important;
 }
 
 @media (max-width: 458px) {

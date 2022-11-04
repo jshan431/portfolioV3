@@ -67,8 +67,8 @@ export default function HeroSection() {
         <div className={styles.leftSideTextContainer}>
           <h1 className={styles.heading1}>Jack <span style={{marginLeft: '10rem'}}>Shan</span></h1>
           <span className={styles.heading1Underline + " mt-2"}></span>
-          <FontAwesomeIcon icon={faLinkedin} className={styles.headingIcons + " mt-2 mr-2"}/>
-          <FontAwesomeIcon icon={faGithub}  className={styles.headingIcons + " mt-2"}/>
+          <a className={styles.iconLink} href="https://www.linkedin.com/in/jack-shan/" target="_blank"><FontAwesomeIcon icon={faLinkedin} className={styles.headingIcons + " mt-2 mr-2"}/></a>
+          <a className={styles.iconLink} href="https://github.com/jshan431" target="_blank"><FontAwesomeIcon icon={faGithub}  className={styles.headingIcons + " mt-2"}/></a>
         </div>
         {/* <Link href="/about">
           <a className={styles.btn}>Learn More</a>

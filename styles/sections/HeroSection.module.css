@@ -62,7 +62,7 @@
 
 .split.left {
   left: 0;
-  background: url('../../public/images/ps.jpg');
+  background: url('../../public/images/laptopBG.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -85,7 +85,7 @@
 
 .split.right {
   right: 0;
-  background: url('../../public/images/xbox.jpg');
+  background: url('../../public/images/designBG.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -160,5 +160,14 @@
 .textWords{
   margin-right: 1rem;
   font-size: 2rem;
-  color: var(--secondary-text-color);
+  color: var(--quaternary-color);
+}
+
+.iconLink{
+  color: white;
+  transition: all .5s;
+}
+
+.iconLink:hover{
+  color: var(--quaternary-color);
 }
