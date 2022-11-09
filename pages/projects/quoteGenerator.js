@@ -60,7 +60,7 @@ export default function QuoteGenerator({quotes}) {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Quote Generator</h1>
-      {
+      {/* {
         quoteText ? 
           <div className={styles.quoteContainer}>
             <div className={styles.quoteText}>
@@ -69,7 +69,6 @@ export default function QuoteGenerator({quotes}) {
               <span id="quote" className={longText ? styles.longQuote : ''}>{quoteText}</span>
               &nbsp;
               <FontAwesomeIcon icon={faQuoteRight}/>
-              {/* <span id="quote">Random Text For Now</span> */}
             </div>
             <div className={styles.quoteAuthor}>
               <span id="author">{quoteAuthor}</span>
@@ -83,7 +82,7 @@ export default function QuoteGenerator({quotes}) {
           </div>
         :
           <div className={styles.loader} id="loader"></div>
-      }
+      } */}
     </div>
   )
 }
