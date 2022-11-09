@@ -1,0 +1,11 @@
+.container{
+  background-color: var(--primary-color);
+  height: 100vh;
+  padding: 3rem;
+}
+
+.title{
+  text-align: center;
+  color: var(--primary-text-color);
+  font-size: 3rem;
+}

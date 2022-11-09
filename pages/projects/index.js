@@ -1,10 +1,10 @@
 
-import styles from '../styles/pages/projects.module.css'
+import styles from '../../styles/pages/projects.module.css'
 import { useMediaQuery } from 'react-responsive'
 
-import FeaturedProjects from '../sections/FeaturedProjects'
-import FeaturedProjectsMobile from '../sections/FeaturedProjectsMobile'
-
+import FeaturedProjects from '../../sections/FeaturedProjects'
+import FeaturedProjectsMobile from '../../sections/FeaturedProjectsMobile'
+import ProjectsList from '../../sections/ProjectsList'
 export default function Projects() {
 
   const isDesktopOrLaptop = useMediaQuery({
@@ -13,8 +13,8 @@ export default function Projects() {
 
   return (
     <div className={styles.mainProjects}>
-      {/* <FeaturedProjects /> */}
       {isDesktopOrLaptop ? <FeaturedProjects /> : <FeaturedProjectsMobile />}
+      <ProjectsList />
     </div>
   )
 }
