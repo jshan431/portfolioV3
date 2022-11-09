@@ -11,13 +11,11 @@ import ProjectsData from "../public/data/projects"
 
 export default function ProjectsList() {
 
-  console.log(ProjectsData)
-
   return (
     <section className={styles.container}>
       <h1 className={styles.title + ' mb-5' }>Additional Projects</h1>
       {
-        ProjectsData.map((project) => <ProjectCard project={project}/>)
+        ProjectsData.map((project) => <ProjectCard key={project.id} project={project}/>)
       }
     </section>
   )

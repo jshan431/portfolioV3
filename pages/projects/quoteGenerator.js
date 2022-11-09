@@ -3,7 +3,7 @@ import styles from '../../styles/pages/projects/quoteGenerator.module.css';
 import { faQuoteLeft, faQuoteRight} from '@fortawesome/free-solid-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-export default function quoteGenerator({quotes}) {
+export default function QuoteGenerator({quotes}) {
 
   const fetchedQuotes = quotes
   const quote = fetchedQuotes[Math.floor(Math.random() * fetchedQuotes.length)]
