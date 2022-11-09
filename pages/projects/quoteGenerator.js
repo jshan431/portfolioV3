@@ -60,7 +60,7 @@ export default function QuoteGenerator({quotes}) {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Quote Generator</h1>
-      {/* {
+      {
         quoteText ? 
           <div className={styles.quoteContainer}>
             <div className={styles.quoteText}>
@@ -82,7 +82,7 @@ export default function QuoteGenerator({quotes}) {
           </div>
         :
           <div className={styles.loader} id="loader"></div>
-      } */}
+      }
     </div>
   )
 }
