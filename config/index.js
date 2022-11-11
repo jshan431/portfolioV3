@@ -1,0 +1,1 @@
+export const JOKE_API_Key = process.env.NEXT_JOKE_API_Key || 'ae3648f2f6904f9ab62c9a3a18c8c301'
