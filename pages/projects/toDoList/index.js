@@ -6,11 +6,13 @@ export default function ToDoList() {
   //const [inputText, setInputText] = useState('')
   const [toDo, setToDo] = useState("")
   const [toDoList, setToDoList] = useState([])
-
-  // useEffect(() => {
-  //   // action on update of toDoList
-  //   localStorage.setItem('todos', JSON.stringify(toDoList))
-  // }, [toDoList]);
+  const [fetched, setFetched] = useState(false)
+  useEffect(() => {
+    // action on update of toDoList
+    if(fetched){
+      localStorage.setItem('todos', JSON.stringify(toDoList))
+    }
+  }, [toDoList]);
 
   useEffect(() => {
     // can only store strings in local storage so we use JSON parse when we get it out
@@ -18,13 +20,12 @@ export default function ToDoList() {
     if (items) {
       setToDoList(items);
     }
+    setFetched(true)
   }, []);
 
   const submitHandler = (event) => {
     event.preventDefault();
-
     addToDo()
-
   }
 
   const addToDo = (todo) => {
@@ -43,7 +44,6 @@ export default function ToDoList() {
   const toDoClickHandler = (index) => {
     let newArr = toDoList
     newArr[index].completed = !newArr[index].completed
-    console.log(newArr)
   }
 
   const toDoRightClickHandler = (index) => {
@@ -51,28 +51,24 @@ export default function ToDoList() {
     setToDoList(newArr)
   }
 
-  const updateLocalStorage = () => {
-    localStorage.setItem('todos', JSON.stringify(toDoList))
-  }
-
   return (
-        <div className={styles.container}>
-          <h1>todos</h1>
-          <form id="form" onSubmit={submitHandler}>
-            <input 
-              type="text" 
-              className={styles.input} 
-              id="input" 
-              placeholder="Enter your todo" 
-              value={toDo}
-              onChange={(e) => setToDo(e.target.value)}
-            />
-            <ul className={styles.todos} id="todos">
-              {toDoList.map((toDo, i) => <ToDo key={i} index={i} toDo={toDo} toDoClickHandler={toDoClickHandler} toDoRightClickHandler={toDoRightClickHandler} toDoList={toDoList}/>)}
-            </ul>
-          </form>
-          <small>Left click to toggle completed. <br/> Right click to delete todo</small>
-        </div>
+    <div className={styles.container}>
+      <h1>todos</h1>
+      <form id="form" onSubmit={submitHandler}>
+        <input 
+          type="text" 
+          className={styles.input} 
+          id="input" 
+          placeholder="Enter your todo" 
+          value={toDo}
+          onChange={(e) => setToDo(e.target.value)}
+        />
+        <ul className={styles.todos} id="todos">
+          {toDoList.map((toDo, i) => <ToDo key={i} index={i} toDo={toDo} toDoClickHandler={toDoClickHandler} toDoRightClickHandler={toDoRightClickHandler} toDoList={toDoList}/>)}
+        </ul>
+      </form>
+      <small>Left click to toggle completed. <br/> Right click to delete todo</small>
+    </div>
   )
 }
 
