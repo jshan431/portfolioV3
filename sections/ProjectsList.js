@@ -14,9 +14,12 @@ export default function ProjectsList() {
   return (
     <section className={styles.container}>
       <h1 className={styles.title + ' mb-5' }>Additional Projects</h1>
-      {
-        ProjectsData.map((project) => <ProjectCard key={project.id} project={project}/>)
-      }
+      <div className={styles.gridWrapper}>
+        {
+          ProjectsData.map((project) => <ProjectCard key={project.id} project={project}/>)
+        }
+      </div>
+
     </section>
   )
 }

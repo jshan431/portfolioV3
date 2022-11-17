@@ -9,3 +9,16 @@
   color: var(--primary-text-color);
   font-size: 3rem;
 }
+
+.gridWrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 30rem);
+  justify-content: center;
+  grid-gap: 3rem;
+}
+
+/* @media screen and (min-width: 850px){
+  .gridWrapper{
+    grid-template-columns: repeat(2, 1fr);
+  }
+} */
