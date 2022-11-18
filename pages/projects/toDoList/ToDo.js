@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import styles from '../../../styles/pages/projects/toDoList.module.css';
 export default function ToDo({toDo, toDoClickHandler, toDoRightClickHandler, index, toDoList}) {
 
-  const [complete, setComplete] = useState(false)
+  const [complete, setComplete] = useState(toDo.completed)
   
   useEffect(() => {
     // action on update of toDoList

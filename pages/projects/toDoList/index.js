@@ -31,9 +31,9 @@ export default function ToDoList() {
   const addToDo = (todo) => {
     let todoText = toDo
     
-    if(todo) {
-      todoText = todo.text
-    }
+    // if(todo) {
+    //   todoText = todo.text
+    // }
 
     if(todoText){
       setToDoList([...toDoList, {text: todoText, completed: false}])

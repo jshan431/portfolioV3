@@ -21,6 +21,13 @@ const projects = [
     "description": "A simple calculator app that can make basic calculations.",
     "image": "/images/projects/calculator.png"
   },
+  {
+    "id": "4",
+    "name": "To Do List",
+    "slug": "toDoList",
+    "description": "A to do list that stores a list of todos in the browsers local storage.",
+    "image": "/images/projects/todolist.png"
+  },
 ]
 
 export default projects;
