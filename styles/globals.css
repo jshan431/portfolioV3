@@ -58,6 +58,63 @@ html {
   padding-top: 4rem;
 }
 
+/* overriding tailwind css */
+.text-5xl {
+  font-size: 4.8rem;
+}
+
+.text-lg {
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+
+.text-xl {
+  font-size: 2.5rem;
+  line-height: 2.8rem;
+}
+
+.text-16px {
+  font-size: 1.8rem;
+}
+.text-2xl {
+  font-size: 3rem;
+  line-height: 3.75rem;
+}
+
+.text-3xl {
+  font-size: 3.875rem;
+  line-height: 4.25rem;
+}
+
+.text-4xl {
+  font-size: 4.25rem;
+  line-height: 5rem;
+}
+
+.text-sm {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+.w-12{
+  width: 6rem;
+}
+
+.h-12{
+  height: 6rem;
+}
+
+.w-16{
+  width: 8rem;
+} 
+
+.h-16{
+  height: 8rem;
+}
+
+.p-3 {
+  padding: 1.75rem;
+}
+
 body {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;

@@ -28,6 +28,13 @@ const projects = [
     "description": "A to do list that stores a list of todos in the browsers local storage.",
     "image": "/images/projects/todolist.png"
   },
+  {
+    "id": "5",
+    "name": "Landing Page",
+    "slug": "landingPage",
+    "description": "A to do list that stores a list of todos in the browsers local storage.",
+    "image": "/images/projects/todolist.png"
+  },
 ]
 
 export default projects;
