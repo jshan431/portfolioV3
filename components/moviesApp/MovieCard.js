@@ -1,4 +1,4 @@
-import styles from '../../../styles/pages/projects/moviesApp.module.css';
+import styles from '../../styles/pages/projects/moviesApp.module.css';
 export default function MovieCard({movie}) {
 
   const IMG_PATH = 'https://image.tmdb.org/t/p/w1280'

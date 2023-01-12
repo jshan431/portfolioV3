@@ -1,6 +1,6 @@
 
 import styles from '../../../styles/pages/projects/moviesApp.module.css';
-import MovieCard from './MovieCard';
+import MovieCard from '../../../components/moviesApp/MovieCard';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { faArrowLeft, faArrowRight, faVideo } from '@fortawesome/free-solid-svg-icons'
