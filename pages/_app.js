@@ -13,28 +13,32 @@ function MyApp({ Component, pageProps, router }) {
   }
 
   return (
+    // <AppWrapper>
+    //   <Layout router={router}>
+    //     <AnimatePresence
+    //       initial={false}
+    //       onExitComplete={() => window.scrollTo(0, 0)}
+    //       mode='wait'
+    //     >
+    //     <motion.main
+    //       key={router.route}
+    //       initial="hidden"
+    //       animate="enter"
+    //       exit="exit"
+    //       variants={variants}
+    //       transition={{ type: 'linear' }}
+    //       // className={styles.container}
+    //     >
+    //       <Component {...pageProps}/>
+    //     </motion.main>
+    //     </AnimatePresence>
+    //   </Layout>
+    // </AppWrapper>
     <AppWrapper>
       <Layout router={router}>
-        <AnimatePresence
-          initial={false}
-          onExitComplete={() => window.scrollTo(0, 0)}
-          mode='wait'
-        >
-        <motion.main
-          key={router.route}
-          initial="hidden"
-          animate="enter"
-          exit="exit"
-          variants={variants}
-          transition={{ type: 'linear' }}
-          // className={styles.container}
-        >
-          <Component {...pageProps}/>
-        </motion.main>
-        </AnimatePresence>
+        <Component {...pageProps}/>
       </Layout>
     </AppWrapper>
-
   )
 }
 
