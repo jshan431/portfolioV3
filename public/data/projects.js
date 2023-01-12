@@ -28,12 +28,26 @@ const projects = [
     "description": "A to do list that stores a list of todos in the browsers local storage.",
     "image": "/images/projects/todolist.png"
   },
+  // {
+  //   "id": "5",
+  //   "name": "Landing Page",
+  //   "slug": "landingPage",
+  //   "description": "A to do list that stores a list of todos in the browsers local storage.",
+  //   "image": "/images/projects/todolist.png"
+  // },
+  // {
+  //   "id": "5",
+  //   "name": "Meetups",
+  //   "slug": "meetups",
+  //   "description": "A app for meetups.",
+  //   "image": "/images/projects/todolist.png"
+  // },
   {
     "id": "5",
-    "name": "Landing Page",
-    "slug": "landingPage",
-    "description": "A to do list that stores a list of todos in the browsers local storage.",
-    "image": "/images/projects/todolist.png"
+    "name": "Movies App",
+    "slug": "moviesApp",
+    "description": "An app that fetches recent movies from 'The Movie DB' API. Features search functionality and pagination.",
+    "image": "/images/projects/moviesApp.png"
   },
 ]
 

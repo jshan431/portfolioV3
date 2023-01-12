@@ -8,7 +8,8 @@
   --quaternary-color: #FF4646;
 
   --primary-text-color: #222;
-  --secondary-text-color: #353535;
+  --secondary-text-color: #353434;
+  --tertiary-text-color: #2c2323;
 }
 
 .contents.contentDark {
@@ -22,6 +23,7 @@
 
   --primary-text-color: #fff;
   --secondary-text-color: #D3D3D3;
+  --tertiary-text-color: #7378c5;
 
   --primary-linear-gradient: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
