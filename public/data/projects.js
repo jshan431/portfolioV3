@@ -42,13 +42,13 @@ const projects = [
   //   "description": "A app for meetups.",
   //   "image": "/images/projects/todolist.png"
   // },
-  {
-    "id": "5",
-    "name": "Movies App",
-    "slug": "moviesApp",
-    "description": "An app that fetches recent movies from 'The Movie DB' API. Features search functionality and pagination.",
-    "image": "/images/projects/moviesApp.png"
-  },
+  // {
+  //   "id": "5",
+  //   "name": "Movies App",
+  //   "slug": "moviesApp",
+  //   "description": "An app that fetches recent movies from 'The Movie DB' API. Features search functionality and pagination.",
+  //   "image": "/images/projects/moviesApp.png"
+  // },
 ]
 
 export default projects;
