@@ -26,6 +26,7 @@ export default function Technologies({selectedPanel}) {
                   src={htmlLogo}
                   width={180}
                   height={180}
+                  alt="htmlLogo"
                 />
               </div>
             </div>
@@ -36,6 +37,7 @@ export default function Technologies({selectedPanel}) {
                 src={cssLogo}
                 width={180}
                 height={180}
+                alt="cssLogo"
               />
             </div>
           </div>
@@ -45,6 +47,7 @@ export default function Technologies({selectedPanel}) {
               src={javascriptLogo}
               width={180}
               height={180}
+              alt="javascriptLogo"
             />
           </div>
         </div>
@@ -54,6 +57,7 @@ export default function Technologies({selectedPanel}) {
             src={mongoDBLogo}
             width={180}
             height={180}
+            alt="mongoDBLogo"
           />
         </div>
         <div className={styles.lineTwoTechnologyTwo}>
@@ -62,6 +66,7 @@ export default function Technologies({selectedPanel}) {
               src={reactLogo}
               width={180}
               height={180}
+              alt="reactLogo"
             />
           </div>
         </div>
@@ -71,6 +76,7 @@ export default function Technologies({selectedPanel}) {
               src={sqlLogo}
               width={180}
               height={180}
+              alt="sqlLogo"
             />
           </div>
         </div>
@@ -84,6 +90,7 @@ export default function Technologies({selectedPanel}) {
               src={awsLogo}
               width={180}
               height={180}
+              alt="awsLogo"
             />
           </div>
         </div>
@@ -93,6 +100,7 @@ export default function Technologies({selectedPanel}) {
               src={bootstrapLogo}
               width={180}
               height={180}
+              alt="bootstrapLogo"
             />
           </div>
         </div>
@@ -102,6 +110,7 @@ export default function Technologies({selectedPanel}) {
               src={nodeLogo}
               width={180}
               height={180}
+              alt="nodeLogo"
             />
           </div>
         </div>
