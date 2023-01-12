@@ -4,7 +4,7 @@ import {faAward, faFingerprint, faRetweet, faUserFriends, faRocket, faMedal, faP
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDribbble, faFacebook, faFacebookF, faGoogle, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import styles from '../../../styles/pages/projects/landingPage.module.css';
-import ScrollAnimation from 'react-animate-on-scroll';
+//import ScrollAnimation from 'react-animate-on-scroll';
 // import 'animate.css';
 
 export default function LandingPage(){

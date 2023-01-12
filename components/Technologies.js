@@ -1,4 +1,4 @@
-import Parallax from 'react-rellax'
+
 import styles from '../styles/components/Technologies.module.css'
 import Image from 'next/image'
 import javascriptLogo from '../public/images/technologies/javascript-logo-0.png'

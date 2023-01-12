@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-import Parallax from 'react-rellax'
+// import Parallax from 'react-rellax'
 import styles from '../styles/components/AboutMe.module.css'
 
 export default function AboutMe({selectedPanel}) {
@@ -23,7 +23,6 @@ export default function AboutMe({selectedPanel}) {
       opacity: 1,
       transition: {staggerChildren: 0.12, delayChildren: 0.04 * i}
     }),
-    // visible: {opacity: 1}
   }
 
   const child = {
@@ -48,22 +47,13 @@ export default function AboutMe({selectedPanel}) {
 
   };
 
-  // const testControls = useAnimation();
-
-  // useEffect(() => {
-  //     testControls.start({
-  //         rotate: 360,
-  //         // transition: { repeat: Infinity, ease: 'linear' }
-  //     })
-  // }, []);
-
   return (
     <>
     <div className={`${styles.aboutMeContainer} ${selectedPanel === 'first' ? styles.aboutMeContainerAnimate: ''}`}>
+      {/*
       <motion.div 
         initial="hidden"
         animate="visible"
-        // animate={testControls}
         variants={container}
         transition={{ delay: .5}}
         className={styles.wordsContainer}
@@ -103,12 +93,9 @@ export default function AboutMe({selectedPanel}) {
           ))}
         </Parallax>
       </motion.div>
+            */}
     </div>
-    {/* <motion.div 
-        animate={testControls}
-    >
-      Hello
-    </motion.div> */}
+
     </>
   )
 }
