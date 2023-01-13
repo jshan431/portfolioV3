@@ -3,7 +3,7 @@ import styles from '../../../styles/pages/projects/passwordGenerator.module.css'
 import { faClipboard } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export default function passwordGenerator() {
+export default function PasswordGenerator() {
 
   const textAreaRef = useRef(null);
 
