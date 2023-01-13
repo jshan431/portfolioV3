@@ -49,6 +49,13 @@ const projects = [
     "description": "An app that fetches recent movies from 'The Movie DB' API. Features search functionality and pagination.",
     "image": "/images/projects/moviesApp.png"
   },
+  {
+    "id": "6",
+    "name": "Password Generator",
+    "slug": "password-generator",
+    "description": "This app randomly generates a password based on some options selected. Features a copy to clipboard function.",
+    "image": "/images/projects/passwordGenerator.png"
+  },
 ]
 
 export default projects;
