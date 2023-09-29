@@ -55,15 +55,15 @@ export default function FeaturedProjectsMobile({}) {
         </div>
         <div className={styles.singleSlide} style={{backgroundColor: '#2A86BA'}}>
           <h1><a href='https://www.blumhouse.com/' target='_blank'>Blumhouse</a></h1>
-          <p>Featured Project 3/5</p>
+          <p>Featured Project 3/4</p>
         </div>
         <div className={styles.singleSlide} style={{backgroundColor: '#252E33'}}>
           <h1><a href='https://bkinddolls.com/' target='_blank'>Be Kind Dolls</a></h1>
-          <p>Featured Project 2/5</p>
+          <p>Featured Project 2/4</p>
         </div>
         <div className={styles.singleSlide} style={{backgroundColor: '#FFB866'}}>
           <h1><a href='https://www.openroadfilms.com/' target='_blank'>Open Road Films</a></h1>
-          <p>Featured Project 1/5</p>
+          <p>Featured Project 1/4</p>
         </div>
       </div>
       <div className={styles.rightSlide} style={{transform: `translateX(${rightSlideTranslate}px)`}}>
