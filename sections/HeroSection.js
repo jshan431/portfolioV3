@@ -87,6 +87,12 @@ export default function HeroSection() {
           transition={{ delay: 1}}
           className={styles.rightSideTextContainer}
         >
+          <div className={styles.leftSideTextContainerMobile}>
+            <h1 className={styles.heading1}>Jack <span style={{marginLeft: '10rem'}}>Shan</span></h1>
+            <span className={styles.heading1Underline + " mt-2"}></span>
+            <a className={styles.iconLink} href="https://www.linkedin.com/in/jack-shan/" target="_blank"><FontAwesomeIcon icon={faLinkedin} className={styles.headingIcons + " mt-2 mr-2"}/></a>
+            <a className={styles.iconLink} href="https://github.com/jshan431" target="_blank"><FontAwesomeIcon icon={faGithub}  className={styles.headingIcons + " mt-2"}/></a>
+          </div>
           {/* <h4 className="mb-2">- Let's Work Together</h4> */}
           {words1.map((word, index) => (
             <motion.span variants={child} className={styles.textWords} key={index} lang="de">

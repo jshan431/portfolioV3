@@ -5,6 +5,13 @@
   transform: translateY(-50%);
   padding: 5rem;
 }
+
+.leftSideTextContainerMobile{
+  visibility: hidden;
+  position: relative;
+  top: -15px;
+}
+
 .heading1 {
   font-size: 15rem;
   color: #fff;
@@ -138,6 +145,35 @@
   .btn {
     padding: 1.2rem;
     width: 12rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .split {
+    /* position: static; */
+    width: 100%;
+    /* height: 100%;
+    overflow: hidden; */
+  }
+
+  .hoverLeft .left {
+    width: 100%;
+  }
+  
+  .hoverLeft .right {
+    width: 100%;
+  }
+  
+  .hoverRight .right {
+    width: 100%;
+  }
+  
+  .hoverRight .left {
+    width: 100%;
+  }
+
+  .leftSideTextContainerMobile{
+    visibility: visible;
   }
 }
 
