@@ -101,7 +101,7 @@ export default function HeroSection() {
           ))}
           <h3 className="mb-2 mt-2">Hi, I'm Web Developer and Designer from San Francisco, California.</h3>
           <h4>
-            I specialize in full stack web development using modern web technologies, and I also have an excellect understanding of good web design principles.
+            I specialize in full stack web development using modern web technologies, and I also have an excellent understanding of good web design principles.
           </h4>
         </motion.div>
       </div>
